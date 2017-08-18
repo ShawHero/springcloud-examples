@@ -1,0 +1,48 @@
+http://www.jianshu.com/u/6a622d516e32
+
+
+http://www.itmuch.com/
+
+
+http://blog.csdn.net/u013815546/article/details/68944039
+https://segmentfault.com/a/1190000005029218
+
+
+查看配置文件信息
+http://localhost:8888/cloud-server/dev/trunk
+http://localhost:8888/settlement-config-server/dev/trunk
+
+查看注册在eureka的app信息
+http://localhost:8761/eureka/apps
+
+查看eureka服务器各项指标信息
+http://localhost:8761/
+
+C:\WINDOWS\system32\drivers\
+
+eureka高可用
+http://www.cnblogs.com/zhangjianbin/p/6262735.html
+
+http://10.50.115.16:8888/settlement-config-server/test/trunk
+
+http://localhost:8888/settlement-config-server/test/trunk
+
+springcloud
+https://github.com/liaokailin/springcloud
+
+http://jesse2013.cnblogs.com/
+
+https://github.com/spring-cloud/spring-cloud-config
+
+http://www.cnblogs.com/jesse2013/p/things-architect-must-know.html
+
+java -jar cloud-config-server-0.0.1.jar
+1）  java -jar cloud-config-server-0.0.1.jar，启动配置服务器，固定绑定端口8888；
+
+2）  java -jar cloud-eureka-server-1.0.0.jar，启动注册服务器，固定绑定端口8671；
+
+3）  java -jar cloud-simple-service-1.0.0.jar --server.port=8081 >log8081.log，启动后台服务，绑定端口8081
+
+4）  java -jar cloud-simple-service-1.0.0.jar --server.port=8082 >log8082.log，启动后台服务，绑定端口8082
+
+5）  java -jar cloud-simple-ui-1.0.0.jar --server.port=8080 >log8080.log，启动前端ui应用，绑定端口8080

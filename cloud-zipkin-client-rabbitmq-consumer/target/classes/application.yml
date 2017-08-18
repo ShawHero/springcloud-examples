@@ -1,0 +1,18 @@
+server:
+   port: 9500
+
+spring:
+  application:
+    name: zipkin-consumer
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  sleuth:
+    #监控开关
+    enabled: true
+    #采样率
+    sampler:
+      percentage: 1

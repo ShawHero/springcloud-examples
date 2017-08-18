@@ -1,0 +1,18 @@
+server:
+  port: 8822
+
+spring:
+  application:
+    name: eureka-cloud-zuul-url
+
+zuul:
+  routes:
+    demo:
+      path: "/registry/**"
+      url: http://localhost:8282/
+    order:
+      path: "/order/**"
+      url: http://10.50.115.16:2263/
+    hello:
+      path: "/hello/**"
+      url: http://localhost:8081/hello/

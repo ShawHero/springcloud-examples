@@ -1,0 +1,10 @@
+access method:
+http://localhost:8833/registry/say ——>>http://localhost:8282/say    or  http://localhost:8283/say
+
+
+serviceId: foos  ref  foos:
+                        ribbon:
+                            listOfServers:
+
+ref:
+https://springcloud.cc/spring-cloud-netflix-zhcn.html#netflix-zuul-reverse-proxy

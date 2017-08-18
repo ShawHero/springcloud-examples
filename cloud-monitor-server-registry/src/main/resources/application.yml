@@ -1,0 +1,14 @@
+server:
+   port: 8787
+
+spring:
+  application:
+    name: cloud-monitor-server-registry
+  boot:
+    admin:
+      url: http://localhost:8767
+
+management:
+  security:
+    enabled: false
+

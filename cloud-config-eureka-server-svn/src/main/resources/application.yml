@@ -1,0 +1,24 @@
+server:
+   port: 8889
+
+spring:
+  application:
+    name: cloud-config-eureka-server
+  cloud:
+    config:
+      server:
+        svn:
+          uri: svn://svn.biostime.com/development/cloud-config
+          username: jenkins-prd01
+          password: '!*14Skjh^'
+
+  profiles:
+    active: subversion
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://master:8761/eureka/,http://backup:8762/eureka/
+
+
+

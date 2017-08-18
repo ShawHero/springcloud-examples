@@ -1,0 +1,16 @@
+server:
+  port: 8181
+
+management:
+  security:
+    enabled: false
+
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:${config.port:8888}
+      label: trunk
+      name: config-demo
+      profile: ${config.profile:dev}
+  application:
+    name: config-client

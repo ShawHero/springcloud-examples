@@ -1,0 +1,3 @@
+config info:
+http://{IP}:{PORT}/{name}/{profiles}/{label:trunk/tags/branches}
+http://localhost:8888/config-demo/dev/trunk

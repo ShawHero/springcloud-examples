@@ -1,0 +1,12 @@
+hystrix-eureka is used to test cloud-turbine
+
+@HystrixCommand
+Hystrix method setting
+
+access method:
+http://localhost:8787/say
+
+hystrix monitor:
+http://localhost:8787/hystrix/
+
+http://localhost:8787/hystrix.stream/

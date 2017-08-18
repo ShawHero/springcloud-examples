@@ -1,0 +1,2 @@
+eureka app info
+http://${eureka.instance.hostname}:${server.port}/

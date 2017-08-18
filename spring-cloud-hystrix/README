@@ -1,0 +1,10 @@
+@HystrixCommand
+Hystrix method setting
+
+access method:
+http://localhost:8484/say
+
+hystrix monitor:
+http://localhost:8484/hystrix/
+
+http://localhost:8484/hystrix.stream/

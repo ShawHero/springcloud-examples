@@ -1,0 +1,28 @@
+@RefreshScope annotation : Dynamic refresh config info
+http://{IP}:{PORT}/refresh
+
+http://localhost:8181/getConfigInfo
+
+http://localhost:8181/bus/refresh  ——》 http://localhost:8888/bus/refresh/
+
+${config.profile:dev} : default  dev
+
+/{application}/{profile}[/{label}]
+/{application}-{profile}.yml
+/{label}/{application}-{profile}.yml
+/{application}-{profile}.properties
+/{label}/{application}-{profile}.properties
+
+
+execute http://localhost:8181/refresh error:
+{
+  "timestamp": 1496997105086,
+  "status": 401,
+  "error": "Unauthorized",
+  "message": "Full authentication is required to access this resource.",
+  "path": "/refresh"
+}
+
+need configuration management:
+                     security:
+                       enabled: false

@@ -1,0 +1,20 @@
+server:
+  port: 8833
+
+spring:
+  application:
+    name: eureka-cloud-zuul-ribbon
+
+zuul:
+  routes:
+    demo:
+      path: "/registry/**"
+      serviceId: foos
+
+ribbon:
+  eureka:
+    enabled: false
+
+foos:
+  ribbon:
+    listOfServers: http://localhost:8282/,http://localhost:8283/

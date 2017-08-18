@@ -1,0 +1,10 @@
+ribbon is eureka default discovery implementation mode
+
+@LoadBalanced
+client load balanced setting
+
+access method:
+http://localhost:8090/say
+
+ref:
+http://blog.csdn.net/qq_26562641/article/details/53332269

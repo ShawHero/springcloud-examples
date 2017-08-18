@@ -1,0 +1,18 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: eureka-cloud-turbine
+
+eureka:
+  instance:
+    client:
+      serviceUrl:
+        defaultZone: http://master:8761/eureka/,http://backup:8762/eureka/
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: eureka-cloud-hystrix-eureka
+  clusterNameExpression: new String("default")

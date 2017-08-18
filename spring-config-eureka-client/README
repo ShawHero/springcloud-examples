@@ -1,0 +1,15 @@
+@RefreshScope annotation : Dynamic refresh config info
+http://{IP}:{PORT}/refresh
+
+http://localhost:8182/getConfigInfo
+
+http://localhost:8182/refresh
+
+${config.profile:dev} : default  dev
+
+
+/{application}/{profile}[/{label}]
+/{application}-{profile}.yml
+/{label}/{application}-{profile}.yml
+/{application}-{profile}.properties
+/{label}/{application}-{profile}.properties

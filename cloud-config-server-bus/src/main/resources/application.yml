@@ -1,0 +1,29 @@
+server:
+   port: 8888
+
+management:
+  security:
+    enabled: false
+
+spring:
+  profiles:
+    active: subversion
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        svn:
+          uri: svn://svn.biostime.com/development/cloud-config
+          username: jenkins-prd01
+          password: '!*14Skjh^'
+
+    bus:
+      trace:
+        enabled: true     # 开启cloud bus的跟踪
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+

@@ -1,0 +1,13 @@
+Comparison of Dubbo and Spring Cloud:
+http://www.jianshu.com/p/fefc37b0c3e2
+
+All configuration of Spring Cloud
+http://cloud.spring.io/spring-cloud-static/Brixton.SR5/#_appendix_compendium_of_configuration_properties
+
+《Spring Cloud与Docker微服务架构实战》书籍源码
+http://book.itmuch.com/（精简版）
+http://git.oschina.net/itmuch/spring-cloud-docker-microservice-book-code
+
+
+cd D:\workspaces\spring-cloud-demo 
+consul agent -dev

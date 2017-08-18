@@ -1,0 +1,16 @@
+server:
+   port: 6767
+
+spring:
+  application:
+    name: cloud-monitor-server-eureka
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://master:8761/eureka/,http://backup:8762/eureka/
+
+management.security.enabled: false

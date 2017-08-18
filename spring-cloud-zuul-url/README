@@ -1,0 +1,12 @@
+ZUUL Request Dispatching
+
+access method:
+http://localhost:8822/registry/say ——>>http://localhost:8282/say
+
+zuul:
+  routes:
+    name:  #Name may be taken at will, but guaranteed only.
+
+ref:
+http://blog.csdn.net/qq_22841811/article/details/67637786
+https://springcloud.cc/spring-cloud-netflix-zhcn.html

@@ -1,0 +1,15 @@
+eureka app info
+http://${eureka.instance.hostname}:${server.port}/eureka/apps
+http://localhost:8761/eureka/apps
+
+eureka server info
+http://${eureka.instance.hostname}:${server.port}/
+http://localhost:8761/
+
+eureka clusters
+http://www.ccblog.cn/95.htm
+
+configuration host:
+C:\Windows\System32\drivers\etc hosts
+127.0.0.1      master
+127.0.0.1      backup

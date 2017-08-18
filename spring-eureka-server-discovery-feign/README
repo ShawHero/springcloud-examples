@@ -1,0 +1,9 @@
+@FeignClient("eureka-server-registry")
+
+@FeignClient:eureka-server-registry is eureka server point spring.application.name
+
+access method:
+http://localhost:8099/say
+
+ref:
+http://blog.csdn.net/qq_26562641/article/details/53332269

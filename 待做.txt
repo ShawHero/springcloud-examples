@@ -1,0 +1,16 @@
+﻿1\服务跟踪(ELK)
+
+2\Consul案例
+
+3\turbine结合rabbitMQ
+
+3\zipkin数据存储到elasticsearch问题，zipkin的依赖关系看不了
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      cluster: elastic_prd
+      hosts: http://192.168.2.79:9200  #生产环境的
+      index: cloud-zipkin
+      index-shards: 5
+      index-replicas: 1

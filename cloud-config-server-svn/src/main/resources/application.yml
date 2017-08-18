@@ -1,0 +1,19 @@
+server:
+   port: 8888
+
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        svn:
+          uri: svn://svn.biostime.com/development/cloud-config
+          username: jenkins-prd01
+          password: '!*14Skjh^'
+
+  profiles:
+    active: subversion
+
+
+

@@ -1,0 +1,12 @@
+access method:
+http://localhost:8866/registry/say ——>>http://localhost:8282/say    or  http://localhost:8283/say
+
+zuul:
+  routes:
+    name:  #Name may be taken at will, but guaranteed only.
+
+serviceId:
+ServiceId is the ID for service registration
+
+ref:
+https://springcloud.cc/spring-cloud-netflix-zhcn.html

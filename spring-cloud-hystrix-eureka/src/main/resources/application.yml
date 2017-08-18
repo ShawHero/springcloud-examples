@@ -1,0 +1,12 @@
+server:
+  port: 8787
+
+spring:
+  application:
+    name: eureka-cloud-hystrix-eureka
+
+eureka:
+  instance:
+    client:
+      serviceUrl:
+        defaultZone: http://master:8761/eureka/,http://backup:8762/eureka/

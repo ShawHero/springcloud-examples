@@ -1,0 +1,9 @@
+config info:
+http://{IP}:{PORT}/{name}/{profiles}/{label:trunk/tags/branches}
+http://localhost:8888/config-demo/dev/trunk
+
+refresh
+http://localhost:8888/bus/refresh/
+
+http://localhost:15672/
+delegate=amqp://guest@127.0.0.1:5672/

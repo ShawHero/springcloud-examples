@@ -1,0 +1,3 @@
+eureka app info
+http://${eureka.instance.hostname}:${server.port}/
+http://localhost:6767/

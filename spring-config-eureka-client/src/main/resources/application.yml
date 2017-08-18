@@ -1,0 +1,18 @@
+server:
+  port: 8182
+
+management:
+  security:
+    enabled: false
+
+spring:
+  cloud:
+    config:
+      discovery:
+         enabled: true
+         serviceId: cloud-config-eureka-server
+      label: trunk
+      name: config-demo
+      profile: ${config.profile:dev}
+  application:
+    name: config-client
