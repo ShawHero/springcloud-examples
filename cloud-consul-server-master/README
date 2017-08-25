@@ -1,15 +1,16 @@
-eureka app info
-http://${eureka.instance.hostname}:${server.port}/eureka/apps
-http://localhost:8761/eureka/apps
+启动
+D:\workspaces-github\other\consul.exe agent -server -bootstrap -bind=10.50.101.16 -client=10.50.101.16 -data-dir=data -ui 
 
-eureka server info
-http://${eureka.instance.hostname}:${server.port}/
-http://localhost:8761/
+-node=10.50.101.16
 
-eureka clusters
-http://www.ccblog.cn/95.htm
+访问consul ui前端
+http://10.50.101.16:8500
+
+访问应用接口
+http://10.50.101.16:8080
 
 configuration host:
 C:\Windows\System32\drivers\etc hosts
-127.0.0.1      master
-127.0.0.1      backup
+127.0.0.1      localhost
+10.50.101.16      localhost
+
